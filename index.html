@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Home of EtherGem, An Smart Contract Platform. ?G?M">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>EtherGem - EGEM.io - Home</title>
+      <script src="js/web3.min.js"></script>
+      <script defer src="https://pro.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-DtPgXIYsUR6lLmJK14ZNUi11aAoezQtw4ut26Zwy9/6QXHH8W3+gjrRDT+lHiiW4" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" href="scribbler-global.css">
+      <link rel="stylesheet" href="scribbler-landing.css">
+      <link rel="author" href="humans.txt">
+      <script src="js/egem.w3.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><img src="imgs/favicon.png"></img></div>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+           <li class="menu__item"><a href="/" class="link link--dark"><i class="fas fa-home"></i> Home</a></li>
+           <li class="menu__item"><a href="https://myegemwallet.com/" target="_blank" class="link link--dark"><i class="far fa-money-bill-alt"></i> Webwallet</a></li>
+	         <li class="menu__item"><a href="http://network.egem.io/" target="_blank" class="link link--dark"><i class="fas fa-signal"></i> Network</a></li>
+	         <li class="menu__item"><a href="https://explorer.egem.io/home" target="_blank" class="link link--dark"><i class="fas fa-cubes"></i> Explorer</a></li>
+           <li class="menu__item"><a href="https://explorer.egem.io/home" target="_blank" class="link link--dark"><i class="fas fa-align-justify"></i> Pool</a></li>
+	         <li class="menu__item"><a href="http://reddit.egem.io" target="_blank" class="link link--dark"><i class="fab fa-reddit-alien"></i> Reddit</a></li>
+	         <li class="menu__item"><a href="http://discord.egem.io" target="_blank" class="link link--dark"><i class="fab fa-discord"></i> Discord</a></li>
+           <li class="menu__item"><a href="https://t.me/EGEM_Team" target="_blank" class="link link--dark"><i class="fab fa-telegram-plane"></i> Telegram</a></li>
+           <li class="menu__item"><a href="https://github.com/TeamEGEM" target="_blank" class="link link--dark"><i class="fab fa-github"></i> Github</a></li>
+           <li class="menu__item"><a href="http://bctann.egem.io" target="_blank" class="link link--dark"><i class="fab fa-bitcoin"></i> BCT ANN</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <img src="imgs/512x512.png" style="height:170px;width:170px;"></img>
+      <h1 class="hero__title">EtherGem</h1>
+      <p class="hero__description">
+        An ethereum network, and smart contract platform with a different view.</br>
+        Certain parts of our beautiful website are blockchain powered.</br>
+        Current Block Height <i class="fas fa-cubes"></i>:<span id="cBlock"> <script type="text/javascript">document.write(cBlock) </script></span></i>
+      </p>
+    </div>
+    <div class="hero__terminal">
+      <pre>
+        <!-- Place your demo code here -->
+        <code class="shell-session demo">egemuser ~ $ </code>
+      </pre>
+    </div>
+    <div class="wrapper">
+      <div class="feature">
+        <div class="feature__item">
+          <h3 class="section__title"><i class="fal fa-tachometer"> </i> Fast & Light</h3>
+          <p>EGEM is built with Go, Golang is an open source programming language that makes it easy to build simple, reliable, and efficient software.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title"><i class="fal fa-wrench"> </i> Stable & Tested</h3>
+          <p>Built upon the reliable go-ethereum protocol for a rock solid base used by thousands of people.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title"><i class="fal fa-shield-check"> </i> Secure & Reliable</h3>
+          <p>With years of testing from the base platform we are certain of the security for the application.</p>
+        </div>
+      </div>
+      <div class="installation">
+        <h3 class="section__title"><i class="fas fa-gem"> </i> What is EGEM.</h3>
+        <div class="tab__container">
+          <ul class="tab__menu">
+            <li class="tab active" data-tab="info"><i class="fal fa-file-alt"> </i> Information</li>
+            <li class="tab" data-tab="roadmap"><i class="fal fa-road"> </i> Roadmap</li>
+            <li class="tab" data-tab="stats"><i class="fal fa-cogs"> </i> Specs</li>
+            <li class="tab" data-tab="team"><i class="fal fa-users"> </i> The Team</li>
+            <li class="tab" data-tab="wallets"><i class="fal fa-piggy-bank"> </i> Wallets</li>
+            <li class="tab" data-tab="markets"><i class="fal fa-exchange-alt"> </i> Markets</li>
+            <li class="tab" data-tab="tools"><i class="fal fa-sliders-h"> </i> Tools</li>
+
+          </ul><br>
+          <pre class="nohighlight code">
+            <code class="tab__pane active info">
+              <script type="text/javascript">
+                let txlink = "0x6a81a1522805b3937de37cafebe1970ae1b79831252944d4d1b1b12e2664bf11";
+                web3.eth.getTransaction(txlink, (error,result)=>{
+                  if(!error){
+                    let data2decode = result["input"];
+                    document.getElementById("info").innerHTML = web3.toAscii(data2decode);
+                  } else {
+                    let error = "Transaction result was null..";
+                    document.getElementById("info").innerHTML = error;
+                  }
+                })
+              </script>
+              <span id="info"></span>
+            </code>
+            <code class="tab__pane stats">
+              Specifications of EGEM:</br></br>
+              Blocktime: 13sec Target</br>
+              ChainID: 1987 </br>
+              Algo: ethash/daggerhashimoto</br>
+              Difficulty: Aggressive adjustment per block.</br>
+              Block Reward: 7 Eras of reduction, including founders reward.</br>
+              Rewards: Info can be found in Eras section.</br></br>
+              Replay Protection enabled from the start.
+            </code>
+            <code class="tab__pane roadmap">
+              Our plans for EGEM can be found by looking thru the era sections.</br>
+            </code>
+            <code class="tab__pane team">
+              Members behind the EGEM project.</br></br>
+              Core DEVS:</br>
+              Riddlez</br>
+              Osoese</br>
+              MakeMoneyOz</br>
+              Jal3inc</br></br>
+              Community Managers:</br>
+              Tbates</br>
+              Count.Cryptula</br>
+              IaMaBeAsT</br></br>
+              Advisors:</br>
+            </code>
+            <code class="tab__pane wallets">
+              List of wallets for the egem network.</br></br>
+              How to connect using metamask.</br></br>
+              Select custom RPC and enter this address.</br>
+              https://jsonrpc.egem.io/custom</br>
+              Download metamask HERE.</br>
+            </br>
+            </code>
+            <code class="tab__pane markets">
+              List of markets were EGEM is avaliable.</br></br></br>
+            </code>
+            <code class="tab__pane tools">
+              <div id="queryBal" class="queryTextBlock">
+                Quick Balance Check</br></br>
+                <div id="addressInput">
+                  Address: <input type="text" name="addressInput" value=" Input address." onClick="this.select();" style="width:425px;"></br></br>
+                  <input type="button" value="Query" onClick="qBalance();" class="egem-btn">
+                  </br></br>
+                  <span class="title">Balance: </span><span id="balance"></span></br>
+                  <span class="title">Transactions: </span><span id="gTransCount"></span>
+                  </br>
+                </div>
+              </div>
+              </br></br>
+              For the sake of transparency we have listed the four addresses.</br></br>
+              0x3fa6576610cac6c68e88ee68de07b104c9524fda EGEM: <span><script type="text/javascript">document.write(balance0) </script></span></br>
+              0xfc0f0a5F06cB00c9EB435127142ac79ac6F48B94 EGEM: <span><script type="text/javascript">document.write(balance1) </script></span></br>
+              0x0666bf13ab1902de7dee4f8193c819118d7e21a6 EGEM: <span><script type="text/javascript">document.write(balance2) </script></span></br>
+              0xcEf0890408b4FC0DC025c8F581c77383529D38B6 EGEM: <span><script type="text/javascript">document.write(balance3) </script></span></br>
+              </br></br>
+              </br></br>
+              Developer Tools:</br></br>
+              <a href="https://remix.ethereum.org/" target="_blank">Remix - Solidity IDE</a>
+            </code>
+          </pre>
+        </div>
+      </div>
+      <div class="installation">
+        <h3 class="section__title"><i class="fal fa-comment-alt-lines"> </i> Information on eras and the rewards.</h3>
+        <div class="tab__container">
+          <ul class="tab__menu">
+            <li class="tab active" data-tab="info">Info</li>
+            <li class="tab" data-tab="era0">Era 0</li>
+            <li class="tab" data-tab="era1">Era 1</li>
+            <li class="tab" data-tab="era2">Era 2</li>
+            <li class="tab" data-tab="era3">Era 3</li>
+            <li class="tab" data-tab="era4">Era 4</li>
+            <li class="tab" data-tab="era5">Era 5</li>
+            <li class="tab" data-tab="era6">Era 6</li>
+          </ul><br>
+          <pre class="nohighlight code">
+            <code class="tab__pane active info">
+              Inside each era section you will find a rough guideline on our goals and this will act as our roadmap.</br></br>
+              The block rewards include a founders reward as we call it, this is to cover projects and advertisement, also promotion efforts, giveaways and day to day costs.</br></br>
+              The perblock reward is split to the four core devs of EGEM to use at there discretion, the addresses can be found in the tools section.</br></br>
+              Also the Eras have a name based on a astronomy reference. </br>
+            </code>
+            <code class="tab__pane era0">
+              Solstice: 5001 - 2,500,000 </br></br>
+              8 EGEM Block reward + 1 founders reward.</br></br>
+              Plans and goals for this era:</br></br>
+              1.</br>
+              2.</br>
+              3.</br>
+              4.</br>
+              5.</br></br>
+              All plans or ideas in a era are subject to change and/or removal at anytime.</br>
+            </code>
+            <code class="tab__pane era1">
+              Asterism: 2,500,001 - 5,000,000 </br></br>
+              4 EGEM Block reward + 0.75 founders reward.</br></br>
+              Plans and goals for this era:</br></br>
+              1.</br>
+              2.</br>
+              3.</br>
+              4.</br>
+              5.</br></br>
+              All plans or ideas in a era are subject to change and/or removal at anytime.</br>
+            </code>
+            <code class="tab__pane era2">
+              Constellation: 5,000,001 - 7,500,000 </br></br>
+              2 EGEM Block reward + 0.5 founders reward.</br></br>
+              Plans and goals for this era:</br></br>
+              1.</br>
+              2.</br>
+              3.</br>
+              4.</br>
+              5.</br></br>
+              All plans or ideas in a era are subject to change and/or removal at anytime.</br>
+            </code>
+            <code class="tab__pane era3">
+              Gibbous: 7,500,001 - 10,000,000 </br></br>
+              1 EGEM Block reward + 0.25 founders reward.</br></br>
+              Plans and goals for this era:</br></br>
+              1.</br>
+              2.</br>
+              3.</br>
+              4.</br>
+              5.</br></br>
+              All plans or ideas in a era are subject to change and/or removal at anytime.</br>
+            </code>
+            <code class="tab__pane era4">
+              Eclipse: 10,000,001 - 12,500,000 </br></br>
+              0.5 EGEM Block reward + 0.1 founders reward.</br></br>
+              Plans and goals for this era:</br></br>
+              1.</br>
+              2.</br>
+              3.</br>
+              4.</br>
+              5.</br></br>
+              All plans or ideas in a era are subject to change and/or removal at anytime.</br>
+            </code>
+            <code class="tab__pane era5">
+              Equinox: 12,500,001 - 15,000,000 </br></br>
+              0.25 EGEM Block reward + 0.05 founders reward.</br></br>
+              Plans and goals for this era:</br></br>
+              1.</br>
+              2.</br>
+              3.</br>
+              4.</br>
+              5.</br></br>
+              All plans or ideas in a era are subject to change and/or removal at anytime.</br>
+            </code>
+            <code class="tab__pane era6">
+              Oblivion: 15,000,001+ </br></br>
+              0.125 EGEM Block reward + 0.025 founders reward.</br></br>
+              Plans and goals for this era:</br></br>
+              1.</br>
+              2.</br>
+              3.</br>
+              4.</br>
+              5.</br></br>
+              All plans or ideas in a era are subject to change and/or removal at anytime.</br>
+            </code>
+          </pre>
+        </div>
+      </div>
+      <div class="installation">
+        <h3 class="section__title"><i class="fal fa-desktop-alt"> </i> Command line instructions for building from source.</h3>
+        <div class="tab__container">
+          <ul class="tab__menu">
+            <li class="tab active" data-tab="help"><i class="fal fa-hands-helping"> </i> help</li>
+            <li class="tab" data-tab="mac"><i class="fab fa-apple"> </i> mac</li>
+            <li class="tab" data-tab="linux"><i class="fab fa-linux"> </i> linux</li>
+            <li class="tab" data-tab="win"><i class="fab fa-windows"> </i> win</li>
+          </ul></br>
+          <pre class="nohighlight code">
+            <code class="tab__pane active help">
+              Build from source instructions based on the users system for EGEM, or download the binary from within each OS tab.
+            </code>
+            <code class="tab__pane mac">
+              <i class="fal fa-server"> </i> Download binary from our github.</br></br>
+              https://github.com/TeamEGEM/go-egem/releases</br></br>
+              Using the linux install instructions works great to build from source.</br>
+            </code>
+            <code class="tab__pane linux">
+              <i class="fal fa-server"> </i> Download binary from our github.</br></br>
+              https://github.com/TeamEGEM/go-egem/releases</br></br>
+
+              Building from source</br>
+              Building EGEM (command line client)</br>
+              Clone the repository to a directory of your choosing:</br></br>
+
+              git clone https://github.com/TeamEGEM/go-egem</br>
+              Install latest distribution of Go (v1.7) if you don't have it already:</br></br>
+
+              See instructions</br></br>
+
+              Building geth requires Go and C compilers to be installed:</br></br>
+
+              sudo apt-get install -y build-essential golang</br>
+              Finally, build the geth program using the following command.</br></br>
+
+              cd go-egem</br>
+              make all</br>
+              You can now run build/bin/geth to start your node.</br></br>
+            </code>
+            <code class="tab__pane win">
+              <i class="fal fa-server"> </i>
+              Download binary from our github.</br></br>
+              https://github.com/TeamEGEM/go-egem/releases</br></br>
+
+              Compiling egem with tools from chocolatey</br>
+              The Chocolatey package manager provides an easy way to get the required build tools installed. If you don't have chocolatey yet, follow the instructions on https://chocolatey.org to install it first.</br></br>
+
+              Then open an Administrator command prompt and install the build tools we need:</br></br>
+
+              C:\Windows\system32> choco install git</br>
+              C:\Windows\system32> choco install golang</br>
+              C:\Windows\system32> choco install mingw</br></br>
+              Installing these packages will set up the Path environment variable. Open a new command prompt to get the new Path. The following steps don't need Administrator privileges.</br></br>
+
+              Please ensure that the installed Go version is 1.7 (or any later version).</br></br>
+
+              First we'll create and set up a Go workspace directory layout, then clone the source.</br></br>
+
+              OBS If, during the commands below, you get the following message:</br></br>
+
+              WARNING: The data being saved is truncated to 1024 characters.</br>
+              Then that means that the setx command will fail, and proceeding will truncate the Path/GOPATH. If this happens, it's better to abort, and try to make some more room in Path before trying again.</br></br>
+
+              C:\Users\xxx> set "GOPATH=%USERPROFILE%"</br>
+              C:\Users\xxx> set "Path=%USERPROFILE%\bin;%Path%"</br>
+              C:\Users\xxx> setx GOPATH "%GOPATH%"</br>
+              C:\Users\xxx> setx Path "%Path%"</br>
+              C:\Users\xxx> mkdir src\github.com\TeamEGEM</br>
+              C:\Users\xxx> git clone https://github.com/TeamEGEM/go-egem src\github.com\TeamEGEM\go-egem</br>
+              C:\Users\xxx> cd src\github.com\TeamEGEM\go-egem</br>
+              C:\Users\xxx> go get -u -v golang.org/x/net/context</br>
+              Finally, the command to compile geth is:</br></br>
+
+              C:\Users\xxx\src\github.com\TeamEGEM\go-eegem> go install -v ./cmd/...</br>
+	           </code>
+          </pre>
+        </div>
+        <div class="feature">
+          <div class="feature__item">
+            <h3 class="section__title"><i class="fal fa-people-carry"> </i> Community First</h3>
+            <p>Our goal is to always be about the community that supports us by making sure all issues are dealt with swiftly and promptly.</p>
+          </div>
+          <div class="feature__item">
+            <h3 class="section__title"><i class="fal fa-chart-line"> </i> Growing Talent</h3>
+            <p>We are always trying to aquire new talent to keep up with latest trends.</p>
+          </div>
+          <div class="feature__item">
+            <h3 class="section__title"><i class="fal fa-person-dolly"> </i> Devoted Members</h3>
+            <p>As a whole we wouldn't be anything without the members that stuck with us from the start.</p>
+          </div>
+        </div>
+      <div class="callout">
+        <p>Looking for more? Come visit our discord and let us know what you want to see!</p>
+      </div>
+      <hr>
+    </div>
+    <footer class="footer">
+      2018 © EtherGem EGEM.io </br>Questions?</br> <a href="mailto:info@egem.io">info@egem.io</a></br></br> <a href=""><i class="fab fa-twitter"> </i> </a> <a href="https://github.com/TeamEGEM/"><i class="fab fa-github"></i></a>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
+</html>
