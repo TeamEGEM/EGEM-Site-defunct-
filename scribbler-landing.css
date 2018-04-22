@@ -51,8 +51,8 @@ nav {
   text-align: left;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  -webkit-box-shadow: 3px 3px 18px 3px #8269D8 ;
-  box-shadow: 3px 3px 18px 3px #8269D8 ;
+  -webkit-box-shadow: 3px 0px 10px 4px rgba(130,105,216,0.48);
+  box-shadow: 3px 0px 10px 4px rgba(130,105,216,0.48) ;
 }
 
 .hero__terminal pre {
