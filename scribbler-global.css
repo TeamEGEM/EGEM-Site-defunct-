@@ -97,17 +97,13 @@ hr {
 }
 
 /* code */
+
 .code {
-  border-radius: 3px;
-  font-family: Space Mono, SFMono-Regular, Menlo,Monaco, Consolas, Liberation Mono, Courier New, monospace;
-  background: var(--bg-color);
-  border: 1px solid var(--code-bg-color);
-  color: var(--primary-color-light);
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  -webkit-box-shadow: 0 1px 6px 1px rgba(0,150,255,0.91) inset;
-  box-shadow: 0 1px 6px 1px rgba(0,150,255,0.91) inset;
-  border-radius: 5px;
+   border-radius: 3px;
+   font-family: Space Mono, SFMono-Regular, Menlo,Monaco, Consolas, Liberation Mono, Courier New, monospace;
+   outline: 7px inset rgb(130, 105, 216);
+   outline-offset: 0px;
+   background: #232323;
 }
 
 .code--block {
