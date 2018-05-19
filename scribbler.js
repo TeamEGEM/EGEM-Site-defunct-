@@ -15,13 +15,13 @@ if (document.getElementsByClassName('demo').length > 0) {
   var txt = `C:\\egem.exe --rpc --unlock="0x0000000000000000000000000000000000000000" --password="ILOVEEGEM" console
 
 INFO [04-09|08:44:57] Maximum peer count                       ETH=25 LES=0 total=25
-INFO [04-09|08:44:57] Starting peer-to-peer node               instance=egem/v1.0.2-charis/windows-amd64/go1.10
+INFO [04-09|08:44:57] Starting peer-to-peer node               instance=egem/v1.0.3-syrius/windows-amd64/go1.10.2
 INFO [04-09|08:44:57] Allocated cache and file handles         database=C:\\mainnet\\egem\\chaindata cache=768 handles=1024
 INFO [04-09|08:44:58] Initialised chain configuration          config="{ChainID: 1987 EGEM Geth}"
 INFO [04-09|08:46:52] Initialising Ethereum protocol           versions="[63 62]" network=1987
 Welcome to the Geth JavaScript console!
 
-instance: egem/v1.0.2-charis/windows-amd64/go1.10
+instance: egem/v1.0.3-syrius/windows-amd64/go1.10.2
 coinbase: 0x0000000000000000000000000000000000000000
 at block: 12561 (Mon, 02 Apr 2018 10:21:30 PDT)
  datadir: C:\\mainnet
