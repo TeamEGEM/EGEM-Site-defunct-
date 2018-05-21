@@ -5,7 +5,7 @@ web3 = new Web3(new Web3.providers.HttpProvider("https://jsonrpc.egem.io/custom"
 var cBlock = web3.eth.blockNumber;
 var balance0 = web3.fromWei(web3.eth.getBalance("0x1140e31a4a7ae014e55f6c235af027c5cfabca17"), "ether");
 var balance1 = web3.fromWei(web3.eth.getBalance("0x63e9cefd428d37430205c0ab8fa2a34a21f911ac"), "ether");
-var balance2 = web3.fromWei(web3.eth.getBalance("0x5087237dceb565ce2e5ddbe9df2d72ebaa133e29"), "ether");
+var balance2 = web3.fromWei(web3.eth.getBalance("0x2025ed239a8dec4de0034a252d5c5e385b73fcd0"), "ether");
 var balance3 = web3.fromWei(web3.eth.getBalance("0xe485aa04bb231f331b85bf64614737c6495cc4b3"), "ether");
 var balance4 = web3.fromWei(web3.eth.getBalance("0x5488f1d22a47fee54cf77a36caa899c9db28b513"), "ether");
 
@@ -36,7 +36,7 @@ function qData() {
 function qDevsBalance() {
   var balance0 = web3.fromWei(web3.eth.getBalance("0x1140e31a4a7ae014e55f6c235af027c5cfabca17"), "ether");
   var balance1 = web3.fromWei(web3.eth.getBalance("0x63e9cefd428d37430205c0ab8fa2a34a21f911ac"), "ether");
-  var balance2 = web3.fromWei(web3.eth.getBalance("0x5087237dceb565ce2e5ddbe9df2d72ebaa133e29"), "ether");
+  var balance2 = web3.fromWei(web3.eth.getBalance("0x2025ed239a8dec4de0034a252d5c5e385b73fcd0"), "ether");
   var balance3 = web3.fromWei(web3.eth.getBalance("0xe485aa04bb231f331b85bf64614737c6495cc4b3"), "ether");
   //BTS ASSETS
   var balance4 = web3.fromWei(web3.eth.getBalance("0x5488f1d22a47fee54cf77a36caa899c9db28b513"), "ether");
