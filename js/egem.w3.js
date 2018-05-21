@@ -3,10 +3,10 @@ web3 = new Web3(new Web3.providers.HttpProvider("https://jsonrpc.egem.io/custom"
 
 // Common Variables
 var cBlock = web3.eth.blockNumber;
-var balance0 = web3.fromWei(web3.eth.getBalance("0x3fa6576610cac6c68e88ee68de07b104c9524fda"), "ether");
-var balance1 = web3.fromWei(web3.eth.getBalance("0xfc0f0a5F06cB00c9EB435127142ac79ac6F48B94"), "ether");
-var balance2 = web3.fromWei(web3.eth.getBalance("0x0666bf13ab1902de7dee4f8193c819118d7e21a6"), "ether");
-var balance3 = web3.fromWei(web3.eth.getBalance("0xcEf0890408b4FC0DC025c8F581c77383529D38B6"), "ether");
+var balance0 = web3.fromWei(web3.eth.getBalance("0x1140e31a4a7ae014e55f6c235af027c5cfabca17"), "ether");
+var balance1 = web3.fromWei(web3.eth.getBalance("0x63e9cefd428d37430205c0ab8fa2a34a21f911ac"), "ether");
+var balance2 = web3.fromWei(web3.eth.getBalance("0x5087237dceb565ce2e5ddbe9df2d72ebaa133e29"), "ether");
+var balance3 = web3.fromWei(web3.eth.getBalance("0xe485aa04bb231f331b85bf64614737c6495cc4b3"), "ether");
 var balance4 = web3.fromWei(web3.eth.getBalance("0x5488f1d22a47fee54cf77a36caa899c9db28b513"), "ether");
 
 // Get balance of the address entered
@@ -34,10 +34,10 @@ function qData() {
 
 // Query the 4 dev funds.
 function qDevsBalance() {
-  var balance0 = web3.fromWei(web3.eth.getBalance("0x3fa6576610cac6c68e88ee68de07b104c9524fda"), "ether");
-  var balance1 = web3.fromWei(web3.eth.getBalance("0xfc0f0a5F06cB00c9EB435127142ac79ac6F48B94"), "ether");
-  var balance2 = web3.fromWei(web3.eth.getBalance("0x0666bf13ab1902de7dee4f8193c819118d7e21a6"), "ether");
-  var balance3 = web3.fromWei(web3.eth.getBalance("0xcEf0890408b4FC0DC025c8F581c77383529D38B6"), "ether");
+  var balance0 = web3.fromWei(web3.eth.getBalance("0x1140e31a4a7ae014e55f6c235af027c5cfabca17"), "ether");
+  var balance1 = web3.fromWei(web3.eth.getBalance("0x63e9cefd428d37430205c0ab8fa2a34a21f911ac"), "ether");
+  var balance2 = web3.fromWei(web3.eth.getBalance("0x5087237dceb565ce2e5ddbe9df2d72ebaa133e29"), "ether");
+  var balance3 = web3.fromWei(web3.eth.getBalance("0xe485aa04bb231f331b85bf64614737c6495cc4b3"), "ether");
   //BTS ASSETS
   var balance4 = web3.fromWei(web3.eth.getBalance("0x5488f1d22a47fee54cf77a36caa899c9db28b513"), "ether");
     document.getElementById("bal0").innerText = balance0
