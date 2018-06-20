@@ -8,19 +8,19 @@
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#e4ebfd"
     },
     "shape": {
-      "type": "triangle",
+      "type": "image",
       "stroke": {
         "width": 1,
-        "color": "#ff00f0"
+        "color": "#00c3cf"
       },
       "polygon": {
         "nb_sides": 5
       },
       "image": {
-        "src": "img/github.svg",
+        "src": "https://egem.io/imgs/favicon.png",
         "width": 100,
         "height": 100
       }
@@ -36,20 +36,20 @@
       }
     },
     "size": {
-      "value": 3,
+      "value": 7.891476416322726,
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
+        "speed": 14.385614385614385,
+        "size_min": 0,
         "sync": false
       }
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
+      "distance": 157.82952832645452,
+      "color": "#d0f7ff",
+      "opacity": 0.7023414010527227,
       "width": 1
     },
     "move": {
