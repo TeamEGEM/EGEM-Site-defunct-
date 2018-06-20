@@ -3,6 +3,7 @@ web3 = new Web3(new Web3.providers.HttpProvider("https://jsonrpc.egem.io/custom"
 
 var reduct1 = 5000;
 var blockReward = 9;
+var uncleReward = 0.25;
 
 // Common Variables
 var cBlock = web3.eth.blockNumber;
