@@ -21,7 +21,7 @@ body {
 }
 
 .dark {
-  z-index: -2;
+  z-index: -1;
   background: #24252A;
   background-image: url("imgs/background.jpg");
 }
