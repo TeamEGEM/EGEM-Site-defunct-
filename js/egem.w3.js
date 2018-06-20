@@ -9,7 +9,7 @@ var balance2 = web3.fromWei(web3.eth.getBalance("0x2025ed239a8dec4de0034a252d5c5
 var balance3 = web3.fromWei(web3.eth.getBalance("0xe485aa04bb231f331b85bf64614737c6495cc4b3"), "ether");
 var balance4 = web3.fromWei(web3.eth.getBalance("0x5488f1d22a47fee54cf77a36caa899c9db28b513"), "ether");
 
-var coinSupply = web3.eth.blockNumber*9-5000;
+var coinSupply = cBlock*9;
 
 // Get balance of the address entered
 function qBalance() {
