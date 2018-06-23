@@ -30,7 +30,7 @@ body {
   text-decoration: none;
 }
 
-#particles-js {
+.particles-js {
   z-index:-1;
   position: absolute;
   top:0;
