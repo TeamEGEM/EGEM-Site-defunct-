@@ -45,6 +45,7 @@ body {
 }
 
 .flex {
+  z-index:-101;
   min-height: 50vh;
   display: flex;
   align-items: center;
