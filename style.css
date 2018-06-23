@@ -21,14 +21,15 @@ body {
 }
 
 .dark {
-  z-index: -1;
   background: #24252A;
   background-image: url("imgs/background.jpg");
 }
+
 #content {
   z-index: 100;
   position: relative;
 }
+
 .footer-area {
   text-decoration: none;
 }
