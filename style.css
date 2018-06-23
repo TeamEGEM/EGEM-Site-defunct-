@@ -18,12 +18,11 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   background: #F5F0FF;
   -webkit-font-smoothing: antialiased;
+  background-image: url("imgs/background.jpg");
 }
 
 .dark {
-  z-index:-101;
-  background: #24252A;
-  background-image: url("imgs/background.jpg");
+
 }
 
 #content {
