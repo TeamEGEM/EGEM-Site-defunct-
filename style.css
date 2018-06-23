@@ -19,6 +19,7 @@ body {
   background: #F5F0FF;
   -webkit-font-smoothing: antialiased;
   background-image: url("imgs/background.jpg");
+  color: white;
 }
 
 .dark {
