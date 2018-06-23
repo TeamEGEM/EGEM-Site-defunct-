@@ -19,7 +19,7 @@ body {
   background: #F5F0FF;
   -webkit-font-smoothing: antialiased;
   background-image: url("imgs/background.jpg");
-  color: white;
+  color: #E4EBFD;
 }
 
 .dark {
@@ -29,7 +29,7 @@ body {
 #blockstats{
   width: 300px;
   height: 120px;
-  border: 1px solid #D0F7FF;
+  border: 2px solid #D0F7FF;
   border-radius: 3px;
   padding: 10px;
   color: #8987DF;
