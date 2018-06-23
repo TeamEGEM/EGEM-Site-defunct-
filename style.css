@@ -26,14 +26,14 @@ body {
 
 }
 
-#wrapper {
-  width:60%;
-  height:auto;
-  background-color: white;
-  align-items: center;
-  justify-content: center;
-  z-index: 101;
+.blockstats{
+  width: 200px;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 10px;
 }
+
 
 #content {
   z-index: 100;
