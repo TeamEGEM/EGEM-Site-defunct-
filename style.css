@@ -29,15 +29,13 @@ body {
 }
 
 #blockstats{
-  width: 300px;
+  width: 100%;
   height: 120px;
   border: 2px solid #D0F7FF;
-  border-radius: 3px;
   padding: 10px;
   color: #8987DF;
   background-color: #FBFCFC;
 }
-
 
 #content {
   z-index: 100;
