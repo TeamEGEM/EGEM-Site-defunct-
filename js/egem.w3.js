@@ -1,60 +1,68 @@
 // web3 connection
 web3 = new Web3(new Web3.providers.HttpProvider("https://jsonrpc.egem.io/custom"));
 
-var reduct1 = 5000;
-var blockReward = 9;
-var uncleReward = 0.25;
-
 // Common Variables
 var cBlock = web3.eth.blockNumber;
-var balance0 = web3.fromWei(web3.eth.getBalance("0x1140e31a4a7ae014e55f6c235af027c5cfabca17"), "ether");
-var balance1 = web3.fromWei(web3.eth.getBalance("0x63e9cefd428d37430205c0ab8fa2a34a21f911ac"), "ether");
-var balance2 = web3.fromWei(web3.eth.getBalance("0x2025ed239a8dec4de0034a252d5c5e385b73fcd0"), "ether");
-var balance3 = web3.fromWei(web3.eth.getBalance("0xe485aa04bb231f331b85bf64614737c6495cc4b3"), "ether");
-var balance4 = web3.fromWei(web3.eth.getBalance("0x5488f1d22a47fee54cf77a36caa899c9db28b513"), "ether");
+//var cBlock = "2500001";
+var reduct1 = "5000";
 
-var coinSupply = cBlock*blockReward-reduct1;
+var trans1 = "2500000";
+var trans2 = "5000000";
+var trans3 = "7500000";
+var trans4 = "10000000";
+var trans5 = "12500000";
+var trans6 = "15000000";
 
-// Get balance of the address entered
-function qBalance() {
-    var x = document.querySelector('[name="addressInput"]').value;
-    var tCount = web3.eth.getTransactionCount(x);
-    var uBalance = web3.fromWei(web3.eth.getBalance(x), "ether");
-    document.getElementById('balance').innerText = uBalance;
-    document.getElementById('gTransCount').innerText = tCount;
-}
+var blockReward = "";
+var uncleReward = "";
 
-// Get and decode data from a TX.
-function qData() {
-  let tx = "0x98a8ba9eee322f8b576347e85c7c082d2a01a75ba5bfa4a9a13f3fc5554c7d67";
-  web3.eth.getTransaction(tx, (error,result)=>{
-    if(!error){
-      let data2decode = result["input"];
-      document.getElementById("thedata").innerHTML = web3.toAscii(data2decode);
-    } else {
-      let error = "Transaction result was null..";
-      document.getElementById("thedata").innerHTML = error;
-    }
-  })
-}
-
-// Query the 4 dev funds.
-function qDevsBalance() {
-  var balance0 = web3.fromWei(web3.eth.getBalance("0x1140e31a4a7ae014e55f6c235af027c5cfabca17"), "ether");
-  var balance1 = web3.fromWei(web3.eth.getBalance("0x63e9cefd428d37430205c0ab8fa2a34a21f911ac"), "ether");
-  var balance2 = web3.fromWei(web3.eth.getBalance("0x2025ed239a8dec4de0034a252d5c5e385b73fcd0"), "ether");
-  var balance3 = web3.fromWei(web3.eth.getBalance("0xe485aa04bb231f331b85bf64614737c6495cc4b3"), "ether");
-  //BTS ASSETS
-  var balance4 = web3.fromWei(web3.eth.getBalance("0x5488f1d22a47fee54cf77a36caa899c9db28b513"), "ether");
-    document.getElementById("bal0").innerText = balance0
-    document.getElementById("bal1").innerText = balance1
-    document.getElementById("bal2").innerText = balance2
-    document.getElementById("bal3").innerText = balance3
-    document.getElementById("bal4").innerText = balance4
-}
-
-function lBlock() {
-       var cBlock = web3.eth.blockNumber;
-       document.getElementById("cBlock").innerText = cBlock;
-       document.getElementById("blockInput2").value = cBlock;
+if (cBlock >= trans1) {
+  var blockReward = "4.75";
+  var uncleReward = "0.125";
+  var preEraAdd = 11250000;
+  var correction = 625000;
+  var whatEra = "Era 1";
+  var coinSupplyPre = cBlock*blockReward;
+  var coinSupply = coinSupplyPre+preEraAdd-correction;
+} else if (cBlock >= trans2) {
+  var blockReward = "2.50";
+  var uncleReward = "0.0625";
+  var preEraAdd = 11875000;
+  var whatEra = "Era 2";
+  var coinSupplyPre = cBlock*blockReward;
+  var coinSupply = coinSupplyPre+preEraAdd-reduct1;
+} else if (cBlock >= trans3) {
+  var blockReward = "1.25";
+  var uncleReward = "0.03125";
+  var preEraAdd = 6250000;
+  var whatEra = "Era 3";
+  var coinSupplyPre = cBlock*blockReward;
+  var coinSupply = coinSupplyPre+preEraAdd-reduct1;
+} else if (cBlock >= trans4) {
+  var blockReward = "0.60";
+  var uncleReward = "0.015625";
+  var preEraAdd = 3125000;
+  var whatEra = "Era 4";
+  var coinSupplyPre = cBlock*blockReward;
+  var coinSupply = coinSupplyPre+preEraAdd-reduct1;
+} else if (cBlock >= trans5) {
+  var blockReward = "0.30";
+  var uncleReward = "0.0078125";
+  var preEraAdd = 1500000;
+  var whatEra = "Era 5";
+  var coinSupplyPre = cBlock*blockReward;
+  var coinSupply = coinSupplyPre+preEraAdd-reduct1;
+} else if (cBlock >= trans6) {
+  var blockReward = "0.15";
+  var uncleReward = "0.00390625";
+  var preEraAdd = 750000;
+  var whatEra = "Era 6";
+  var coinSupplyPre = cBlock*blockReward;
+  var coinSupply = coinSupplyPre+preEraAdd-reduct1;
+} else {
+  var blockReward = "9";
+  var uncleReward = "0.25";
+  var preEraAdd = "0";
+  var whatEra = "Era 0";
+  var coinSupply = cBlock*blockReward;
 }
