@@ -29,7 +29,7 @@ body {
 }
 
 #blockstats{
-  margin: 0% 15% 0%!important;
+  margin: 0% 22% 0%!important;
   height: auto;
   border: 2px solid #634cad;
   border-radius: 5px;
@@ -39,13 +39,21 @@ body {
 }
 
 #featurelist{
-  margin: 0% 15% 0%!important;
+  margin: 0% 22% 0%!important;
   height: auto;
-  border: 2px solid #634cad;
-  border-radius: 5px;
   padding: 10px;
   color: white;
   background-color: #0000004d;
+}
+
+.friends-area{
+  margin: 0% 22% 0%!important;
+  height: auto;
+  border: 1px solid #634cad;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #content {
