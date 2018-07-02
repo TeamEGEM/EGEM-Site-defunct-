@@ -5,16 +5,18 @@
       <meta name="description" content="Home of EtherGem, A Smart Contract Platform.">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>EtherGem - EGEM.io - Home</title>
-      <script src="js/web3.min.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
-      <script defer src="https://pro.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-DtPgXIYsUR6lLmJK14ZNUi11aAoezQtw4ut26Zwy9/6QXHH8W3+gjrRDT+lHiiW4" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-87DrmpqHRiY8hPLIr7ByqhPIywuSsjuQAfMXAE0sMUpY3BM7nXjf+mLIUSvhDArs" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
       <link rel="stylesheet" href="style.css">
       <link rel="author" href="humans.txt">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/web3.min.js"></script>
       <script src="js/egem.w3.js"></script>
       <script src="js/particles.js"></script>
       <script src="js/app.js"></script>
+      <script src="js/jquery.js"></script>
   </head>
   <body>
       <center>
@@ -22,7 +24,17 @@
         <div id="content">
           <img src="imgs/logo.png" style="width:200px;padding-top:50px;z-index:2;"></img></br>
           Smart contract platform and blockchain with a different view.</br></br>
-          <small>Welcome to the landing page.</small></br></br>
+          <small>Welcome to the landing page.</small></br>
+          <small><a href="#" id="">View Whitepaper.</a></small></br></br>
+          <small>Menu: <a href="#" id="qmopen">Open</a></small></br>
+          </br>
+          <div class="quickm-area">
+          <a href="https://forum.egem.io/" class="bttn-dark"><i class="fal fa-comment-smile"></i> Forums</a>
+          <a href="https://explorer.egem.io/" class="bttn-dark"><i class="fas fa-cubes"></i> Explorer</a>
+          <a href="https://network.egem.io/" class="bttn-dark"><i class="fas fa-signal"></i> Network</a>
+          <a href="http://discord.egem.io/" class="bttn-dark"><i class="fab fa-discord"></i> Discord</a>
+          </br></br>
+          </div>
           <div id="blockstats">
             <small>
           We are currently in, <span id="supply"> <script type="text/javascript">document.write(whatEra) </script></span></br>
@@ -33,31 +45,7 @@
           Uncle Reward: <i class="fal fa-clone"></i> <span id="supply"> <script type="text/javascript">document.write(uncleReward) </script> EGEM</span>
             </small>
           </div>
-          </br>
-          <small>
-            Need help? or curious of EtherGem? Visit the forums, or come in our discord.</br>
-            We keep all important info within the forums related to our network & coin.
-          </small>
-          </br></br>
-          <div id="featurelist">
-            Some of the features we have planned and are working on.
-            <small>
-            <ul>
-              <li>Custom Sidechain (Near instant tx's, staking, a form of masternode, and other features.)</li>
-              <li>Explorer made from scratch to facilitate our network and the users who use it.</li>
-              <li>Mineable Tokens (Part of the sidechain plans.)</li>
-              <li>Lot more plans as time progresses and things get completed.</li>
-            </ul>
-            </small>
-          </div>
-          </br>
-          <a href="https://forum.egem.io/" class="bttn-dark"><i class="fal fa-comment-smile"></i> Forums</a>
-          <a href="https://explorer.egem.io/" class="bttn-dark"><i class="fas fa-cubes"></i> Explorer</a>
-          <a href="https://network.egem.io/" class="bttn-dark"><i class="fas fa-signal"></i> Network</a>
-          </br>
-          <a href="http://discord.egem.io/" class="bttn-dark"><i class="fab fa-discord"></i> Discord</a>
-          </br></br>
-          <small>Friends & Affiliates:</small></br>
+          <small>Friends & Affiliates: <a href="#" id="fopen">Open</a></small></br>
           </br>
           <div class="friends-area">
               <a href="https://btfd.shop/" class="" target="_blank"><img src="https://btfd.shop/wp-content/uploads/2018/04/BTFDshop-.png" style="width:135px;height:64px;padding:5px;" title="BTFD.Shop - Crypto Apparel + More"></img></a></br>
@@ -74,13 +62,11 @@
               <a href="http://api.egem.io/" class="" target="_blank"><i class="fal fa-code"></i> API</a> &nbsp;
               <a href="https://pool.egem.io/" class="" target="_blank"><i class="fal fa-poo"></i> Mining Pool</a> &nbsp;
               <a href="http://bctann.egem.io/" class="" target="_blank"><i class="fab fa-bitcoin"></i> BCT ANN</a> &nbsp;
+              <a href="http://discord.egem.io/" class="" target="_blank"><i class="fab fa-discord"></i> Discord</a> &nbsp;
               <a href="https://twitter.com/ETHERGEMCOIN" class="" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a> &nbsp;
               <a href="https://t.me/EGEM_Team" class="" target="_blank"><i class="fab fa-telegram"></i> Telegram</a> &nbsp;
               <a href="https://github.com/TeamEGEM" class="" target="_blank"><i class="fab fa-github"></i> Github</a>
               </br>
-              <a href="https://coinlib.io/coin/EGEM/EtherGem" class="" target="_blank"><i class="fal fa-list"></i> Coinlib.io</a> &nbsp;
-              <a href="https://www.livecoinwatch.com/price/EtherGem-EGEM" class="" target="_blank"><i class="fal fa-list"></i> Livecoinwatch.com</a>
-              </br></br>
             </small>
           </div>
       </div>
