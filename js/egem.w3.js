@@ -6,6 +6,13 @@ var CMbalance = web3.fromWei(web3.eth.getBalance("0x63e9cefd428d37430205c0ab8fa2
 var F1balance = web3.fromWei(web3.eth.getBalance("0x1140e31a4a7ae014e55f6c235af027c5cfabca17"), "ether");
 var F2balance = web3.fromWei(web3.eth.getBalance("0x2025ed239a8dec4de0034a252d5c5e385b73fcd0"), "ether");
 var F3balance = web3.fromWei(web3.eth.getBalance("0xe485aa04bb231f331b85bf64614737c6495cc4b3"), "ether");
+
+var MSbalanceF = Number(MSbalance).toFixed(2);
+var CMbalanceF = Number(CMbalance).toFixed(2);
+var F1balanceF = Number(F1balance).toFixed(2);
+var F2balanceF = Number(F2balance).toFixed(2);
+var F3balanceF = Number(F3balance).toFixed(2);
+
 // Common Variables
 var cBlock = web3.eth.blockNumber;
 //var cBlock = "2500001";
