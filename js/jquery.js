@@ -11,4 +11,9 @@ $(function() {
       $( ".quickm-area" ).fadeToggle( "slow", "linear" );
     });
 
+    $( ".wallet-area" ).hide();
+    $( "#addopen" ).click(function() {
+      $( ".wallet-area" ).slideToggle( "slow", "linear" );
+    });
+
 });
