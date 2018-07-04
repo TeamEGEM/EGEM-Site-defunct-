@@ -1,6 +1,7 @@
 // web3 connection
 web3 = new Web3(new Web3.providers.HttpProvider("https://jsonrpc.egem.io/custom"));
 
+var MSbalance = web3.fromWei(web3.eth.getBalance("0x45a25161f56868d8706b449f72ec3d2f838e57e8"), "ether");
 // Common Variables
 var cBlock = web3.eth.blockNumber;
 //var cBlock = "2500001";
