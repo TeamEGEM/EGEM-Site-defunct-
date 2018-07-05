@@ -76,5 +76,5 @@ if (cBlock >= trans1) {
   var uncleReward = "0.25";
   var preEraAdd = "0";
   var whatEra = "Era 0";
-  var coinSupply = cBlock*blockReward;
+  var coinSupply = cBlock*blockReward-reduct1;
 }
