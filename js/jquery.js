@@ -2,16 +2,16 @@
 $(function() {
 
     $( ".friends-area" ).hide();
-    $( "#fopen" ).click(function() {
+    $( "#friendmenu_open" ).click(function() {
       $( ".friends-area" ).fadeToggle( "slow", "linear" );
     });
 
-    $( "#qmopen" ).click(function() {
+    $( "#quickmenu_open" ).click(function() {
       $( ".quickm-area" ).fadeToggle( "slow", "linear" );
     });
 
     $( ".wallet-area" ).hide();
-    $( "#addopen" ).click(function() {
+    $( "#walletmenu_open" ).click(function() {
       $( ".wallet-area" ).slideToggle( "slow", "linear" );
     });
 
