@@ -22,6 +22,8 @@ body {
   -webkit-font-smoothing: antialiased;
   background-image: url("imgs/background.jpg");
   color: #E4EBFD;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .dark {
