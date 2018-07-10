@@ -18,12 +18,12 @@ body {
   padding: 0px;
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
-  background: #F5F0FF;
+  background: #000;
   -webkit-font-smoothing: antialiased;
   background-image: url("imgs/background.jpg");
   color: #E4EBFD;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .dark {
