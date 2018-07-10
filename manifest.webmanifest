@@ -6,6 +6,7 @@
   "background_color": "#8987DF",
   "theme_color": "#8987DF",
   "description": "Smart contract platform and blockchain with a different view, and Quarry Nodes.",
+  "prefer_related_applications": false,
   "icons": [{
     "src": "images/touch/homescreen48.png",
     "sizes": "48x48",
@@ -36,7 +37,7 @@
     "type": "image/png"
   }],
   "related_applications": [{
-    "platform": "play",
+    "platform": "",
     "url": ""
   }]
 }
