@@ -1,7 +1,7 @@
 {
   "name": "EtherGem",
   "short_name": "EGEM",
-  "start_url": ".",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#8987DF",
   "theme_color": "#8987DF",
