@@ -20,14 +20,21 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   background: #000;
   -webkit-font-smoothing: antialiased;
-  background-image: url("imgs/background.jpg");
+  background-image: url("imgs/background2.jpg");
   color: #E4EBFD;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.dark {
-
+.ONLINE {
+    color:green;
+}
+.checking,
+.unchecked {
+    color:#FF8C00;
+}
+.timeout {
+    color:red;
 }
 
 #blockstats{
@@ -53,9 +60,18 @@ body {
   height: auto;
   border: 1px solid #634cad;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
   color: white;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+#serverchecker{
+  margin: 0% 25% 0%!important;
+  height: auto;
+  border: 1px solid #634cad;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #0000004d;
 }
 
 #content {
@@ -98,7 +114,7 @@ a.bttn:focus {
 }
 
 a.bttn-dark {
-  color: #644cad;
+  color: #FFF;
   text-decoration: none;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s ease all;

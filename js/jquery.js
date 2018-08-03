@@ -3,11 +3,11 @@ $(function() {
 
     $( ".friends-area" ).hide();
     $( "#friendmenu_open" ).click(function() {
-      $( ".friends-area" ).fadeToggle( "slow", "linear" );
+      $( ".friends-area" ).slideToggle( "slow", "linear" );
     });
 
     $( "#quickmenu_open" ).click(function() {
-      $( ".quickm-area" ).fadeToggle( "slow", "linear" );
+      $( ".quickm-area" ).slideToggle( "slow", "linear" );
     });
 
     $( ".wallet-area" ).hide();
